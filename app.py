@@ -114,7 +114,8 @@ if st.button("🚀 Get Recommendations", type="primary"):
                 genres = movie_info['genres']
                 
                 st.markdown(f"**{i}. {title}**")
-                st.write(f"&nbsp;&nbsp;&nbsp;&nbsp; **Genres**: {genres} | **Predicted Rating**: {pred_rating:.2f}")
+                st.write(f"&nbsp;&nbsp;&nbsp;&nbsp; **Genres**: {genres}")
+                st.write(f"&nbsp;&nbsp;&nbsp;&nbsp; **Predicted Rating**: {pred_rating:.2f}")
 
         except Exception as e:
             st.error(f"An error occurred during recommendation: {e}")
